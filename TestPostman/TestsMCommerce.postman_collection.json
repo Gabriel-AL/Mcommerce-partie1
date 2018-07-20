@@ -1,0 +1,130 @@
+{
+	"info": {
+		"name": "TestsMCommerce",
+		"_postman_id": "dd0d311e-0e5e-f499-38b9-3ede15b0d26b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin/Produits",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 4,\n        \"nom\": \"Poney2\",\n        \"prix\": 0,\n        \"prixAchat\": 200\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Admin/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Admin",
+						"Produits"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Produits/Alpha",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 4,\n        \"nom\": \"Poney2\",\n        \"prix\": 0,\n        \"prixAchat\": 200\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits/Alpha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits",
+						"Alpha"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Prix Nul",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 4,\n        \"nom\": \"Poney2\",\n        \"prix\": 0,\n        \"prixAchat\": 200\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Prix Non Nul",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 4,\n        \"nom\": \"Poney2\",\n        \"prix\": 444,\n        \"prixAchat\": 200\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
